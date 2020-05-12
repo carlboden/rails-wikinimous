@@ -8,9 +8,8 @@
 require 'faker'
 
 10.times do
-  article = Article.new(
-    title = Faker::Appliance.equipment,
-    content = Faker::Lorem.sentence
+  article = Article.create(
+    title: Faker::Appliance.equipment,
+    content: Faker::Lorem.sentence
   )
-  article.save!
 end
